@@ -8,7 +8,9 @@
     "build-dev": "webpack",
     "build-prod": "webpack --node-env=production"
   },
-  "keywords": ["webpack"],
+  "keywords": [
+    "webpack"
+  ],
   "author": "mvbaulin@yande.ru",
   "license": "ISC",
   "devDependencies": {
@@ -34,5 +36,13 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvbaulin/webpack-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mvbaulin/webpack-project/issues"
+  },
+  "homepage": "https://github.com/mvbaulin/webpack-project#readme"
 }
