@@ -11,7 +11,7 @@
   "keywords": [
     "webpack"
   ],
-  "author": "mvbaulin@yande.ru",
+  "author": "mvbaulin@yandex.ru",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.19.6",
