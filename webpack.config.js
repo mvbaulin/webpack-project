@@ -32,11 +32,17 @@ module.exports = {
             chunks: 'all'
         }
     },
+    resolve: {
+        alias: {
+            '@': path.resolve(__dirname, 'src')
+        }
+    },
     devServer: {
         port: 3000,
         open: true
     },
-    entry: ['@babel/polyfill', path.resolve(__dirname, 'src', 'main.js')],
+    // entry: ['@babel/polyfill', path.resolve(__dirname, 'src', 'main.js')],
+    entry: [path.resolve(__dirname, 'src', 'main.js')],
     output: {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
@@ -107,16 +113,16 @@ module.exports = {
                     }
                 ]
             },
-            {
-                test: /\.m?js$/i,
-                exclude: /(node_modules|bower_components)/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env']
-                    }
-                }
-            }
+            // {
+            //     test: /\.m?js$/i,
+            //     exclude: /(node_modules|bower_components)/,
+            //     use: {
+            //         loader: 'babel-loader',
+            //         options: {
+            //             presets: ['@babel/preset-env']
+            //         }
+            //     }
+            // }
         ]
     }
 }

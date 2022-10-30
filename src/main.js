@@ -6,4 +6,6 @@ import './404.html';
 import './index.scss';
 
 //Scripts
-import './js/script';
+import '@/js/commonEnums';
+import '@/js/initial';
+import '@/js/theme';
